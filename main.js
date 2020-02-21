@@ -51,6 +51,21 @@ function showData(singleData) {
         clone.querySelector("section.exercise").remove();
     }
 
+    //modal//
+
+    clone.querySelector("button").addEventListener("click", () =>{
+        fetch(`https://spreadsheets.google.com/feeds/list/1lSLr0TScZbQtobbrCt3jJiaKRwKJMfmT7e4UaktrN3A/od6/public/values?alt=json id=${exercise.id}`)
+        .then(res => res.json())
+        .then(showDetails);
+    });
+
+    function showDetails(data){
+        console.log(data)
+        modal.querySelector(".modal-name").textContent = data.exerciseName;
+
+        modal.classList.remove("hide");
+    }
+
 
     document.querySelector('main').appendChild(clone);
 }
