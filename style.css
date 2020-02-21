@@ -5,12 +5,15 @@ footer{
 .exercise {
     border: 1px solid black;
     margin: 10px;
+    padding: 10px;
 }
 
 .workouts {
     border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
 }
 
 .exercise-img {
-    width: 100%;
+    width: 300px;
 }
