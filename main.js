@@ -62,6 +62,27 @@ function getData(data) {
             clone.querySelector("section.exercise").remove();
         }
 
+    const modal = document.querySelector(".modal-background");
+    modal.addEventListener("click", () => {
+        modal.classList.add("hide");
+    });
+
+    clone.querySelector("button").addEventListener("click", () => {
+        showDetails(singleData)
+    });
+
+    function showDetails(data) {
+        modal.querySelector(".modal-name").textContent = data.gsx$exercisename.$t;
+
+        modal.querySelector(".modal-image").src = data.gsx$img.$t;
+
+        modal.querySelector(".modal-description").textContent = data.gsx$exerciselongdescription.$t;
+
+        modal.querySelector(".modal-muscles-groups").textContent = data.gsx$exercisemusclesgroup.$t;
+
+        modal.classList.remove("hide");
+    }
+
 
         document.querySelector('main').appendChild(clone);
     }
