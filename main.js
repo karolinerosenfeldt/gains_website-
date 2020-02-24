@@ -33,7 +33,7 @@ function getData(data) {
             h4.textContent = category;
             document.querySelector("main").appendChild(section);*/
         })
-        handleData();
+        handleData(data);
     }
 }
 
