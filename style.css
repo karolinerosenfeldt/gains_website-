@@ -3,6 +3,27 @@ footer{
 }
 
 
+nav {
+    display: inline;
+    float: right;
+    display: block;
+    text-decoration: none;
+}
+
+nav a {
+    display: inline;
+    padding-right: 30px;
+    text-decoration: none;
+    color: #FFC55C;
+}
+
+nav a:hover {
+    color: #FEA502;
+}
+
+
+
+
 
 .exercise {
     border: 1px solid black;
