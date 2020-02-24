@@ -30,7 +30,8 @@ footer{
 
 .modal-content{
     background-color: #fefefe;
-    border: 1px solid #7c1f17;
-    margin: 1em;
-    padding: 2em;
+    border: 10px solid #FEA502;
+    margin: 15em;
+    padding: 5em;
+    text-align: center;
 }
