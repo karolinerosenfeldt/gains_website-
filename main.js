@@ -44,11 +44,12 @@ function showData(singleData) {
     clone.querySelector("h2.workout-duration span").textContent = singleData.gsx$workoutduration.$t;
     clone.querySelector("p.workout-type").textContent = singleData.gsx$workouttype.$t;
     clone.querySelector("img.exercise-img").src = singleData.gsx$img.$t;
+    clone.querySelector("img.workout-img").src = singleData.gsx$img.$t;
     if (!singleData.gsx$workouttitle.$t) {
-        clone.querySelector("section.workouts").remove();
+        clone.querySelector("article.one-workout").remove();
     }
     if (!singleData.gsx$exercisename.$t) {
-        clone.querySelector("section.exercise").remove();
+        clone.querySelector("article.one-exercise").remove();
     }
 
 
