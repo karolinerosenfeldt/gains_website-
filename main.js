@@ -53,19 +53,26 @@ function showData(singleData) {
 
     //modal//
 
-    clone.querySelector("button").addEventListener("click", () =>{
-        fetch(`https://spreadsheets.google.com/feeds/list/1lSLr0TScZbQtobbrCt3jJiaKRwKJMfmT7e4UaktrN3A/od6/public/values?alt=json id=${exercise.id}`)
-        .then(res => res.json())
-        .then(showDetails);
+    const modal = document.querySelector(".modal-background");
+    modal.addEventListener("click", () => {
+        modal.classList.add("hide");
     });
 
-    function showDetails(data){
-        console.log(data)
-        modal.querySelector(".modal-name").textContent = data.exerciseName;
+    clone.querySelector("button").addEventListener("click", () => {
+        showDetails(singleData)
+    });
+
+    function showDetails(data) {
+        modal.querySelector(".modal-name").textContent = data.gsx$exercisename.$t;
+
+        modal.querySelector(".modal-image").src = data.gsx$img.$t;
+
+        modal.querySelector(".modal-description").textContent = data.gsx$exerciselongdescription.$t;
+
+        modal.querySelector(".modal-muscles-groups").textContent = data.gsx$exercisemusclesgroup.$t;
 
         modal.classList.remove("hide");
     }
-
 
     document.querySelector('main').appendChild(clone);
 }
