@@ -9,18 +9,29 @@ function getData(data) {
         .then(createCategories)
 
     function createCategories(data) {
-        data.forEach(function (category) {
+        const cleaned = [];
+        data.feed.entry.forEach(item=>{
+            console.log(item)
+            if(cleaned.includes(item.gsx$category.$t) === false){
+
+
+                cleaned.push(item.gsx$category.$t)
+            }
+        })
+        console.log(cleaned)
+        cleaned.forEach(function (category) {
+           // console.log(category.gsx$category.$t)
             const link = document.createElement("a");
             link.setAttribute("href", `#${category}`);
-            link.textContent = oneCat;
+            link.textContent = category;
 
             document.querySelector("nav").appendChild(link);
-
+/*
             const section = document.createElement("section.exercise");
             section.id = category;
             const h4 = document.createElement("h4");
             h4.textContent = category;
-            document.querySelector("main").appendChild(section);
+            document.querySelector("main").appendChild(section);*/
         })
         handleData();
     }
