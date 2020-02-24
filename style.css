@@ -1,3 +1,21 @@
+Html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: grid 1/-1;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    justify-content: space-between 2em;
+}
+
+
+
 footer{
     background-color: yellow;
 }
@@ -7,6 +25,7 @@ footer{
     margin: 10px;
     padding: 10px;
 }
+
 
 .workouts {
     border: 1px solid red;

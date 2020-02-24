@@ -26,13 +26,16 @@ function getData(data) {
             link.textContent = category;
 
             document.querySelector("nav").appendChild(link);
-/*
-            const section = document.createElement("section.exercise");
-            section.id = category;
-            const h4 = document.createElement("h4");
-            h4.textContent = category;
-            document.querySelector("main").appendChild(section);*/
+
+           const section = document.createElement("section");
+        section.id = category;
+        const h4 = document.createElement("h4");
+        h4.textContent = category;
+        section.appendChild(h4);
+        document.querySelector("main").appendChild(section);
         })
+
+
         handleData(data);
     }
 }
@@ -63,5 +66,8 @@ function getData(data) {
         }
 
 
+        document.querySelector(`#${singleData.gsx$category.$t}`).appendChild(clone)
+
         document.querySelector('main').appendChild(clone);
+
     }
