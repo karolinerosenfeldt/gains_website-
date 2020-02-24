@@ -18,6 +18,10 @@ footer{
     width: 300px;
 }
 
+.hide{
+    display: none;
+}
+
 .modal-background{
     position: fixed;
     z-index: 10;
@@ -30,8 +34,34 @@ footer{
 
 .modal-content{
     background-color: #fefefe;
-    border: 10px solid #FEA502;
-    margin: 15em;
-    padding: 5em;
+    border: 20px solid #FEA502;
+    margin: 2em;
+    margin-top: 8em;
     text-align: center;
 }
+
+.modal-image{
+    width: 40%;
+    height: auto;
+}
+
+.modal-name{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.modal-description{
+    text-align: justify;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+.modal-muscles-groups{
+    font-size: 20px;
+}
+
+
+
