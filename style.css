@@ -1,3 +1,9 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 @font-face {
   font-family: font;
   src: url(font/Prototype.ttf);
@@ -48,6 +54,7 @@ main {
 
 .one-exercise:hover {
     transform: scale(1.02);
+    background-color: #D2D3D2;
 
 }
 
@@ -85,7 +92,6 @@ img.bg {
     left: 0;
 }
 
-<<<<<<< HEAD
 .hide{
     display: none;
 }
@@ -133,9 +139,6 @@ img.bg {
     font-size: 20px;
 }
 
-
-
-=======
 .header {
     background-color: black;
     height: 150px;
@@ -226,7 +229,7 @@ button {
     text-transform: uppercase !important;
     letter-spacing: 2px;
     color: #fff;
-    cursor: hand;
+    cursor: pointer;
     text-align: center;
     text-transform: capitalize;
     border-radius: 0px;
@@ -240,6 +243,5 @@ button {
     margin-top: auto;
 }
 
-button:focus,
-button:active,
->>>>>>> style-tile
+/*button:focus,
+button:active,*/
