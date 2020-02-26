@@ -40,3 +40,19 @@ nav a:hover {
 .exercise-img {
     width: 300px;
 }
+
+nav{
+    background-color: yellow;
+}
+
+ul{
+    background-color: blueviolet;
+}
+
+li{
+    background-color: red;
+}
+
+a {
+    background-color: green;
+}
