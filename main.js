@@ -25,7 +25,7 @@ function getData(data) {
             link.setAttribute("href", `#${category}`);
             link.textContent = category;
 
-            document.querySelector("nav").appendChild(link);
+            document.querySelector("nav div ul li").appendChild(link);
 /*
             const section = document.createElement("section.exercise");
             section.id = category;

@@ -1,13 +1,52 @@
-footer{
+/*Phone*/
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    nav {
+        float: left;
+        text-decoration: none;
+        display: block;
+        background-color: #FEA502;
+        margin-top: 0;
+        position: sticky;
+    }
+
+    nav div {
+
+    }
+
+    nav a {
+        padding-right: 30px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+footer {
     background-color: yellow;
 }
 
 
 nav {
-    display: inline;
     float: right;
-    display: block;
     text-decoration: none;
+    display: flex;
+    flex: row;
+    align-content: flex-end;
+    background-color: black;
+    margin-top: 0;
+    position: sticky;
+}
+
+nav .icon {
+  display: none;
+}
+
+nav a:hover {
+    color: #FEA502;
 }
 
 nav a {
@@ -17,9 +56,13 @@ nav a {
     color: #FFC55C;
 }
 
-nav a:hover {
-    color: #FEA502;
+ul {
+    list-style: none;
+    display: flex;
+    flex: row;
 }
+
+
 
 
 
@@ -39,20 +82,4 @@ nav a:hover {
 
 .exercise-img {
     width: 300px;
-}
-
-nav{
-    background-color: yellow;
-}
-
-ul{
-    background-color: blueviolet;
-}
-
-li{
-    background-color: red;
-}
-
-a {
-    background-color: green;
 }
