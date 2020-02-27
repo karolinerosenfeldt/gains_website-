@@ -1,12 +1,12 @@
-*{
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 @font-face {
-  font-family: font;
-  src: url(font/Prototype.ttf);
+    font-family: font;
+    src: url(font/Prototype.ttf);
 }
 
 html {
@@ -94,11 +94,11 @@ img.bg {
     left: 0;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.modal-background{
+.modal-background {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -108,26 +108,26 @@ img.bg {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-content{
+.modal-content {
     background-color: #fefefe;
-    border: 20px solid #FEA502;
+    border: 15px solid #FEA502;
     margin: 2em;
     margin-top: 8em;
     text-align: center;
 }
 
-.modal-image{
+.modal-image {
     width: 30%;
     height: auto;
 }
 
-.modal-name{
+.modal-name {
     font-size: 30px;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
-.modal-description{
+.modal-description {
     text-align: justify;
     padding-top: 10px;
     padding-right: 80px;
@@ -137,8 +137,44 @@ img.bg {
     letter-spacing: 1.2px;
 }
 
-.modal-muscles-groups{
+.modal-muscles-groups {
     font-size: 20px;
+}
+
+.close-link a {
+    color: #FFC55C;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 100px;
+}
+
+.close-link a {
+    position: relative;
+    color: #FFC55C;
+    margin-bottom: 50px;
+}
+
+.close-link a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFC55C;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.close-link a:hover:before {
+    visibility: visible;
+    background-color: #ffa500;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .header {
