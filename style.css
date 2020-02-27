@@ -37,12 +37,14 @@ nav {
     flex: row;
     align-content: flex-end;
     background-color: black;
-    margin-top: 0;
+    align-content: center;
     position: sticky;
 }
 
 nav .icon {
-  display: none;
+  display:block;
+height: 45px;
+    margin-right: 20px;
 }
 
 nav a:hover {
