@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+=======
+Html {
+    scroll-behavior: smooth;
+}
+
+
+
+footer{
+    background-color: yellow;
+>>>>>>> category-connection
 }
 
 @font-face {
@@ -9,6 +20,7 @@
   src: url(font/Prototype.ttf);
 }
 
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
     height: 100%;
@@ -17,6 +29,13 @@ html {
 
 body {
     background-color: #FFC55C;
+=======
+
+.workouts {
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+>>>>>>> category-connection
 }
 
 footer {
