@@ -19,6 +19,47 @@ body {
     background-color: #FFC55C;
 }
 
+.box {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid #FFC55C;
+    border-right: 3px solid #FFC55C;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+    margin: -10px;
+}
+
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 
 footer {
     background: black;
