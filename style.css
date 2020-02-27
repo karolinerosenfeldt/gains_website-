@@ -564,5 +564,9 @@ button:active,*/
         margin-top: 50px;
     }
 
+    .box {
+        display: none;
+    }
+
 
 }
