@@ -25,6 +25,7 @@ function getData(data) {
         })
         console.log(cleaned)
         cleaned.forEach(function (category) {
+<<<<<<< HEAD
             // console.log(category.gsx$category.$t)
             const link = document.createElement("a");
             link.setAttribute("href", `#${category}`);
@@ -44,6 +45,22 @@ function getData(data) {
                         const h4 = document.createElement("h4");
                         h4.textContent = category;
                         document.querySelector("main").appendChild(section);*/
+=======
+           // console.log(category.gsx$category.$t)
+            const linkA = document.createElement("a");
+            const linkLi = document.createElement("li");
+            linkA.setAttribute("href", `#${category}`);
+            linkA.textContent = category;
+
+            linkLi.appendChild(linkA);
+            document.querySelector("nav div ul").appendChild(linkLi);
+/*
+            const section = document.createElement("section.exercise");
+            section.id = category;
+            const h4 = document.createElement("h4");
+            h4.textContent = category;
+            document.querySelector("main").appendChild(section);*/
+>>>>>>> nav-css
         })
 
 
