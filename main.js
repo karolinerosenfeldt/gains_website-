@@ -21,11 +21,13 @@ function getData(data) {
         console.log(cleaned)
         cleaned.forEach(function (category) {
            // console.log(category.gsx$category.$t)
-            const link = document.createElement("a");
-            link.setAttribute("href", `#${category}`);
-            link.textContent = category;
+            const linkA = document.createElement("a");
+            const linkLi = document.createElement("li");
+            linkA.setAttribute("href", `#${category}`);
+            linkA.textContent = category;
 
-            document.querySelector("nav div ul li").appendChild(link);
+            linkLi.appendChild(linkA);
+            document.querySelector("nav div ul").appendChild(linkLi);
 /*
             const section = document.createElement("section.exercise");
             section.id = category;

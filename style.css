@@ -5,10 +5,21 @@
     }
 
     ul {
-    background-color: hotpink;
     list-style: none;
     display: flex;
-    flex: column;
+    flex-flow: column wrap;
+}
+
+    .nav_items{
+    flex-flow: column wrap;
+    list-style: none;
+    }
+
+    nav {
+    text-decoration: none;
+    background-color: black;
+    align-items: flex-start;
+    position: sticky;
 }
 
 }
@@ -24,7 +35,7 @@ nav {
     text-decoration: none;
     display: flex;
     flex: row;
-    background-color: blue;
+    background-color: black;
     align-content: center;
     position: sticky;
 }
@@ -34,9 +45,15 @@ nav a:hover {
 }
 
 nav .icon {
-    display: flex;
     height: 45px;
     margin-right: 20px;
+    display: inline-block;
+    float: left;
+}
+
+ul li:first-child{
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
 
@@ -48,17 +65,15 @@ nav a {
 }
 
 ul {
-    background-color: black;
     list-style: none;
     display: flex;
     flex: row;
+    justify-content: flex-end;
 }
 
 .nav_items {
-    background-color: aqua;
-    display: flex;
-    margin-left: auto;
     list-style: none;
+    width: 100%;
 }
 
 
