@@ -141,17 +141,20 @@ img.bg {
     font-size: 20px;
 }
 
+.close-link{
+    margin-bottom: 20px;
+}
+
 .close-link a {
-    color: #FFC55C;
+    color: #FEA502;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3em;
-    margin-bottom: 100px;
 }
 
 .close-link a {
     position: relative;
-    color: #FFC55C;
+    color: #FEA502;
     margin-bottom: 50px;
 }
 
