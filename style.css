@@ -1,12 +1,12 @@
-*{
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 @font-face {
-  font-family: font;
-  src: url(font/Prototype.ttf);
+    font-family: font;
+    src: url(font/Prototype.ttf);
 }
 
 html {
@@ -19,10 +19,88 @@ body {
     background-color: #FFC55C;
 }
 
-.workouts {
-    border: 1px solid red;
-    margin: 10px;
-    padding: 10px;
+
+footer {
+    background: black;
+    padding: 90px 0;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    color: white;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: orange;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+.social-media a:hover {
+    color: gray;
+}
+
+right-col h1 {
+    font-size: 26px;
+}
+
+.border {
+    width: 100px;
+    height: 4px;
+    background: #FEA502;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.txtb {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: orange;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    min-width: 260px;
+}
+
+.btn {
+    padding: 18px 40px;
+    font-size: 16px;
+    color: orange;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+.btn:hover {
+    opacity: .7;
 }
 
 
@@ -36,11 +114,13 @@ body {
     width: 100%;
 }
 
-main {
+main>section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-
+main>section>h4 {
+    grid-column: 1/-1;
+}
 .one-exercise {
     display: flex;
     flex-flow: column;
@@ -57,7 +137,9 @@ main {
 .one-exercise:hover {
     transform: scale(1.02);
     background-color: #D2D3D2;
-
+    -webkit-box-shadow: 0px 0px 61px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 61px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 61px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -76,6 +158,10 @@ main {
 
 .one-workout:hover {
     transform: scale(1.02);
+    background-color: #D2D3D2;
+    -webkit-box-shadow: 0px 0px 61px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 61px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 61px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -94,11 +180,11 @@ img.bg {
     left: 0;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.modal-background{
+.modal-background {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -108,7 +194,7 @@ img.bg {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.modal-content{
+.modal-content {
     background-color: #fefefe;
     border: 20px solid #FEA502;
     margin: 2em;
@@ -116,18 +202,18 @@ img.bg {
     text-align: center;
 }
 
-.modal-image{
+.modal-image {
     width: 30%;
     height: auto;
 }
 
-.modal-name{
+.modal-name {
     font-size: 30px;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
-.modal-description{
+.modal-description {
     text-align: justify;
     padding-top: 10px;
     padding-right: 80px;
@@ -137,7 +223,7 @@ img.bg {
     letter-spacing: 1.2px;
 }
 
-.modal-muscles-groups{
+.modal-muscles-groups {
     font-size: 20px;
 }
 
@@ -247,3 +333,31 @@ button {
 
 /*button:focus,
 button:active,*/
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 100px;
+
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+
+        /* Set up positioning */
+
+        top: 0;
+        left: 0;
+    }
+
+
+    .footer-logo {
+        margin-top: 50px;
+    }
+
+
+}
