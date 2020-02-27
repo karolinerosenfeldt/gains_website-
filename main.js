@@ -1,10 +1,10 @@
 const link = "https://spreadsheets.google.com/feeds/list/1lSLr0TScZbQtobbrCt3jJiaKRwKJMfmT7e4UaktrN3A/od6/public/values?alt=json";
 window.addEventListener("DOMContentLoaded", getData);
 
-  const modal = document.querySelector(".modal-background");
-    modal.addEventListener("click", () => {
-        modal.classList.add("hide");
-    });
+const modal = document.querySelector(".modal-background");
+modal.addEventListener("click", () => {
+    modal.classList.add("hide");
+});
 
 function getData(data) {
     fetch("https://spreadsheets.google.com/feeds/list/1lSLr0TScZbQtobbrCt3jJiaKRwKJMfmT7e4UaktrN3A/od6/public/values?alt=json")
@@ -15,9 +15,9 @@ function getData(data) {
 
     function createCategories(data) {
         const cleaned = [];
-        data.feed.entry.forEach(item=>{
+        data.feed.entry.forEach(item => {
             console.log(item)
-            if(cleaned.includes(item.gsx$category.$t) === false){
+            if (cleaned.includes(item.gsx$category.$t) === false) {
 
 
                 cleaned.push(item.gsx$category.$t)
@@ -25,7 +25,7 @@ function getData(data) {
         })
         console.log(cleaned)
         cleaned.forEach(function (category) {
-           // console.log(category.gsx$category.$t)
+            // console.log(category.gsx$category.$t)
             const link = document.createElement("a");
             link.setAttribute("href", `#${category}`);
             link.textContent = category;
@@ -38,6 +38,12 @@ function getData(data) {
         h4.textContent = category;
         section.appendChild(h4);
         document.querySelector("main").appendChild(section);
+            /*
+                        const section = document.createElement("section.exercise");
+                        section.id = category;
+                        const h4 = document.createElement("h4");
+                        h4.textContent = category;
+                        document.querySelector("main").appendChild(section);*/
         })
 
 
@@ -47,12 +53,12 @@ function getData(data) {
 
 
 
-    function handleData(data) {
-        const myData = data.feed.entry;
-        console.log("myData - console");
-        console.log(myData);
-        myData.forEach(showData);
-    }
+function handleData(data) {
+    const myData = data.feed.entry;
+    console.log("myData - console");
+    console.log(myData);
+    myData.forEach(showData);
+}
 
 function showData(singleData) {
     //alert("hello")
@@ -72,9 +78,9 @@ function showData(singleData) {
     if (!singleData.gsx$exercisename.$t) {
         clone.querySelector("article.one-exercise").remove();
     }
-      clone.querySelector("button").addEventListener("click", () => {
-       showDetails(singleData)
-   });
+    clone.querySelector("button").addEventListener("click", () => {
+        showDetails(singleData)
+    });
 
 
         document.querySelector(`#${singleData.gsx$category.$t}`).appendChild(clone)
@@ -82,6 +88,8 @@ function showData(singleData) {
         document.querySelector('main').appendChild(clone);
 
     }
+//    document.querySelector('main').appendChild(clone);
+
 
 
 //    function showData(singleData) {
@@ -109,19 +117,19 @@ function showData(singleData) {
 //
 //        }
 
-    function showDetails(data) {
-        //alert("hello")
-        modal.querySelector(".modal-name").textContent = data.gsx$exercisename.$t;
+function showDetails(data) {
+    //alert("hello")
+    modal.querySelector(".modal-name").textContent = data.gsx$exercisename.$t;
 
-        modal.querySelector(".modal-image").src = data.gsx$img.$t;
+    modal.querySelector(".modal-image").src = data.gsx$img.$t;
 
-        modal.querySelector(".modal-description").textContent = data.gsx$exerciselongdescription.$t;
+    modal.querySelector(".modal-description").textContent = data.gsx$exerciselongdescription.$t;
 
-        modal.querySelector(".modal-muscles-groups").textContent = data.gsx$exercisemusclesgroup.$t;
+    modal.querySelector(".modal-muscles-groups").textContent = data.gsx$exercisemusclesgroup.$t;
 
-        modal.classList.remove("hide");
+    modal.classList.remove("hide");
 
-    }
+}
 
 
 
