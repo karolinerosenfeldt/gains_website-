@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 
-Html {
+html {
     scroll-behavior: smooth;
 }
 
 /*Phone*/
 @media only screen and (max-width: 600px) {
     body {
+        margin-top:200px;
         background-color: lightblue;
     }
 
@@ -33,7 +34,6 @@ Html {
     position: fixed;
     top: 0;
     width: 100%;
-        z-index: 10;
 }
 
 
@@ -361,10 +361,12 @@ img.bg {
     margin: 2em;
     margin-top: 8em;
     text-align: center;
+    height: 80%;
+    overflow: scroll
 }
 
 .modal-image {
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 
