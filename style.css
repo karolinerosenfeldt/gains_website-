@@ -30,7 +30,10 @@ Html {
     text-decoration: none;
     background-color: black;
     align-items: flex-start;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
+        z-index: 10;
 }
 
 
@@ -68,7 +71,10 @@ nav {
     flex: row;
     background-color: black;
     align-content: center;
-    position: sticky;
+     position: fixed;
+     top: 0;
+  width: 100%;
+    z-index: 10;
 }
 
 nav a:hover {
@@ -556,6 +562,10 @@ button:active,*/
 
     .footer-logo {
         margin-top: 50px;
+    }
+
+    .box {
+        display: none;
     }
 
 
