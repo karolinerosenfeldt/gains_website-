@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 *{
     -webkit-box-sizing: border-box;
@@ -9,7 +8,8 @@
 
 Html {
     scroll-behavior: smooth;
-=======
+}
+
 /*Phone*/
 @media only screen and (max-width: 600px) {
     body {
@@ -34,36 +34,25 @@ Html {
     position: sticky;
 }
 
->>>>>>> nav-css
+
 }
 
 
 
-<<<<<<< HEAD
-footer{
-=======
 footer {
->>>>>>> nav-css
-    background-color: yellow;
-
-=======
-* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
->>>>>>> origin/master
+
 }
 
-<<<<<<< HEAD
+
 @font-face {
     font-family: font;
     src: url(font/Prototype.ttf);
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 html {
     scroll-behavior: smooth;
     height: 100%;
@@ -72,7 +61,7 @@ html {
 
 body {
     background-color: #FFC55C;
-=======
+    }
 
 nav {
     text-decoration: none;
@@ -129,19 +118,20 @@ ul {
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
->>>>>>> nav-css
+
 }
 
-<<<<<<< HEAD
+
 .workouts {
     border: 1px solid red;
     margin: 10px;
     padding: 10px;
 
-=======
+}
+
 main{
     margin-top: 150px;
->>>>>>> origin/master
+
 }
 
 .box {

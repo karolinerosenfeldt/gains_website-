@@ -25,13 +25,12 @@ function getData(data) {
         })
         console.log(cleaned)
         cleaned.forEach(function (category) {
-<<<<<<< HEAD
             // console.log(category.gsx$category.$t)
-            const link = document.createElement("a");
-            link.setAttribute("href", `#${category}`);
-            link.textContent = category;
-
-            document.querySelector("nav").appendChild(link);
+//            const link = document.createElement("a");
+//            link.setAttribute("href", `#${category}`);
+//            link.textContent = category;
+//
+//            document.querySelector("nav").appendChild(link);
 
            const section = document.createElement("section");
         section.id = category;
@@ -45,7 +44,7 @@ function getData(data) {
                         const h4 = document.createElement("h4");
                         h4.textContent = category;
                         document.querySelector("main").appendChild(section);*/
-=======
+
            // console.log(category.gsx$category.$t)
             const linkA = document.createElement("a");
             const linkLi = document.createElement("li");
@@ -60,7 +59,7 @@ function getData(data) {
             const h4 = document.createElement("h4");
             h4.textContent = category;
             document.querySelector("main").appendChild(section);*/
->>>>>>> nav-css
+
         })
 
 
