@@ -9,39 +9,8 @@ Html {
     scroll-behavior: smooth;
 }
 
-/*Phone*/
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-
-    .bg {
-        margin-top: 200px;
-    }
-
-    main {
-        margin-top: 5px;
-    }
-
-    ul {
-    list-style: none;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-    .nav_items{
-    flex-flow: column wrap;
-    list-style: none;
-    }
-
-    nav {
-    text-decoration: none;
-    background-color: black;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    width: 100%;
-        z-index: 10;
+nav .icon {
+    margin-right: auto;
 }
 
 
@@ -77,7 +46,8 @@ body {
 nav {
     text-decoration: none;
     display: flex;
-    flex: row;
+    flex-flow: row;
+    justify-content:flex-end;
     background-color: black;
     align-content: center;
      position: fixed;
@@ -92,15 +62,12 @@ nav a:hover {
 
 nav .icon {
     height: 45px;
-    margin-right: 20px;
-    display: inline-block;
-    float: left;
+    margin-right: auto;
+    display: block;
+align-self: flex-start
+
 }
 
-ul li:first-child{
-    align-self: flex-start;
-    justify-self: flex-start;
-}
 
 
 nav a {
@@ -118,6 +85,7 @@ ul {
 }
 
 .nav_items {
+    display: flex;
     list-style: none;
     width: 100%;
 }
@@ -548,7 +516,51 @@ button {
 /*button:focus,
 button:active,*/
 
+/*Phone*/
+@media only screen and (max-width: 600px) {
 
+    .bg {
+        margin-top: 230px;
+    }
+
+    main {
+        margin-top: 5px;
+    }
+
+    ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+        align-self: center;
+}
+
+    .nav_items{
+    flex-flow: column wrap;
+    list-style: none;
+    }
+
+    nav {
+    text-decoration: none;
+    background-color: black;
+    align-items: flex-start;
+        flex-flow: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+        z-index: 10;
+}
+ nav .icon {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    nav ul li {
+        text-align: center;
+    }
+
+
+
+}
 
 
 @media only screen and (max-width: 1000px) {

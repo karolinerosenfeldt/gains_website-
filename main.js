@@ -52,7 +52,7 @@ function getData(data) {
             linkA.textContent = category;
 
             linkLi.appendChild(linkA);
-            document.querySelector("nav div ul").appendChild(linkLi);
+            document.querySelector("nav ul").appendChild(linkLi);
 /*
             const section = document.createElement("section.exercise");
             section.id = category;
